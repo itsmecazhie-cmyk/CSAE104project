@@ -1,14 +1,15 @@
-body { background: #a4fff1; }
+body { background: #ffffff; }
 
 :root {
-  --brand: #86ffc1;
-  --brand-soft: #86ffc1;
-  --surface: #86ffc1;
-  --page: #d7fce5;
-  --text: #1f2933;
-  --border: #86ffc1;
+  --brand: #173f80;
+  --brand-soft: #6482f2;
+  --surface: #ffffff;
+  --page: #ffffff;
+  --text: #000000;
+  --border: #000000;
   --radius: 8px;
 }
+
 
 * { box-sizing: border-box; }
 
@@ -23,9 +24,11 @@ body {
 
 header {
   background: var(--brand);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 16px 24px;
+  text-align: center;
 }
+
 
 main {
   max-width: 720px;
@@ -55,8 +58,10 @@ footer {
 
 nav ul { list-style: none; margin: 0; padding: 0; }
 nav li { display: inline-block; margin-right: 16px; }
-nav a { color: rgb(49, 101, 78); text-decoration: none; }
-nav a:hover { text-decoration: underline; }
+nav a { color: rgb(255, 255, 255); text-decoration: none; }
+nav a:hover {background: #27864b; 
+color: #000000;}
+
 
 table { border-collapse: collapse; width: 100%; background: var(--surface); }
 th, td { border: 1px solid var(--border); padding: 8px; text-align: left; }
@@ -73,15 +78,21 @@ input:focus, select:focus, textarea:focus { outline: 3px solid var(--brand); }
 
 button {
   background: var(--brand);
-  color: #045a2e;
+  color: #ffffff;
   border: 0;
   border-radius: var(--radius);
   padding: 5px 20px;
   font: inherit;
   cursor: pointer;
 }
-button:hover { background: #167a46; }
+button:hover { background: #f5c928; 
+color: #000000;}
 
-p {color: red} 
-<!-- Order as the external class/id is more specific than the element selector. -->
+/*{color: red} */
+/* Order as the external class/id is more specific than the element selector. */
 
+/*color change*/
+
+.new-title {
+    color: #ffffff;
+}

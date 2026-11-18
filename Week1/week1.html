@@ -1,29 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-     <head>
-        <title>Don Mariano Marcos Memorial State University</title>
-     </head>
-     <body>
-        <header><img src="DMMMSU.png" alt width="30" height="30"></a>Don Mariano Marcos Memorial State University
-            <div class="container">
+<head>
+<title>HTML Layout - Grid</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif;}
 
-<nav>
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu content content1"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr;
+}
+
+/* header */
+.container header {
+  grid-area: header;
+  background-color: #666;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.container header h1 {
+  font-size: 1rem;
+}
+
+/* navigation menu */
+nav {
+  grid-area: menu;
+  background-color: #ccc;
+  padding: 15px;
+}
+
+/* Style list inside nav menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  grid-area: content;
+  background-color: #f1f1f1;
+  padding: 15px;
+}
+article h2 {
+  font-size: 2rem;
+}
+
+article1 {
+  grid-area: content1;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+article1 h2 {
+  font-size: 2rem;
+}
+
+
+/* Style the footer */
+footer {
+  grid-area: footer;
+  background-color: #17891f;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .container {
+  grid-template-areas:
+    "header header header" 
+    "menu menu menu"
+    "content content content"    
+    "footer footer footer";
+    }
+}
+
+</style>
+</head>
+<body>
+    <header><img src="DMMMSU.png" alt width="30" height="30"><h1>Don Marinano Marcos Memorial State University</h1></header>
+<div class="container">
+
+
+<nav >
   <ul>
-    <li><a href="#">home</a></li>
-    <li><a href="#">baout</a></li>
-    <li><a href="#">reg</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Registration</a></li>
   </ul>
 </nav>
+<footer><p>Alright Reserved 2026</p></footer>
 
-<article>
-  <h2 class="container1">welcome</h2>
-  <p>log in</p>
-  <p>user</p>
-  <p>pass</p>
+<article action="/action_page.php" autocomplete="on">
+  <h1>Welcome to DMMMSu</h1>
+  <p>Login Form</p>
+  
+  <div>
+  <label for="title">Username: </label>
+  <input type="text" id="title" name="title" required maxlength="100">
+  </div>
+
+  <div>
+  <label for="fname">Password: </label>
+  <input type="password" id="fname" name="fname" required>
+  </div>
+
+  <button >Log-in</button>
+
 </article>
 
-<footer><p>© 2026 W3Schools</p></footer>
+
+<article1>
+    <p>ADS</p>
+  <p><a href="https://www.facebook.com"><img src="Fb.png" alt width="30" height="30"></a></p>
+  <p><a href="https://www.youtube.com"></a><img src="yt.png" alt width="30" height="30"></p>
+  <p><a href="https://www.instagram.com"><img src="Insta.png" alt width="30" height="30"></p>
+</article>
+
+
+
 
 </div>
-        </header>
-     </body>
+
+</body>
+</html>
