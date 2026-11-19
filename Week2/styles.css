@@ -2,10 +2,10 @@ body { background: #ffffff; }
 
 :root {
   --brand: #173f80;
-  --brand-soft: #6482f2;
   --surface: #ffffff;
   --page: #ffffff;
   --text: #000000;
+  --font-family: system-ui, "Arial", "Helvetica", sans-serif;
   --border: #000000;
   --radius: 8px;
 }
@@ -14,7 +14,7 @@ body { background: #ffffff; }
 * { box-sizing: border-box; }
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-family);
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
@@ -25,8 +25,8 @@ body {
 header {
   background: var(--brand);
   color: rgb(255, 255, 255);
-  padding: 16px 24px;
-  text-align: center;
+  padding: 16px 24px ;
+  text-align: left;
 }
 
 
@@ -36,13 +36,30 @@ main {
   padding: 0 16px;
 }
 
-.notice {
-  background: var(--surface);
+.notice1 {
+  background: color-mix(in srgb, #27864b, white 50%);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 16px;
   margin-bottom: 16px;
 }
+
+.notice2 {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.notice3 {
+  background: color-mix(in srgb, #b83232, white 50%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
 
 .tag {
   background: var(--brand-soft);
