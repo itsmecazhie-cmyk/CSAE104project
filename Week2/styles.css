@@ -10,7 +10,6 @@ body { background: #ffffff; }
   --radius: 8px;
 }
 
-
 * { box-sizing: border-box; }
 
 body {
@@ -23,12 +22,21 @@ body {
 }
 
 header {
-  background: var(--brand);
-  color: rgb(255, 255, 255);
-  padding: 16px 24px ;
-  text-align: left;
+background: var(--brand);
+color: rgb(255, 255, 255);
+padding: 16px 24px ;
+text-align: left;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+        }
 
 main {
   max-width: 720px;
@@ -60,6 +68,13 @@ main {
   margin-bottom: 16px;
 }
 
+.posnot {
+  background: color-mix(in srgb, #ffffff, #173f80 50%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
 
 .tag {
   background: var(--brand-soft);
@@ -102,7 +117,7 @@ button {
   font: inherit;
   cursor: pointer;
 }
-button:hover { background: #f5c928; 
+button:hover { background: #8e99ab; 
 color: #000000;}
 
 /*{color: red} */
