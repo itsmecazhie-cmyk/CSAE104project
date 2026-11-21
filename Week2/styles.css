@@ -19,6 +19,7 @@ body {
   margin: 0;
   background: var(--page);
   color: var(--text);
+  text-align: center;
 }
 
 header {
@@ -42,6 +43,20 @@ main {
   max-width: 720px;
   margin: 24px auto;
   padding: 0 16px;
+}
+
+.about1 {
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.about2 {
+  background: #ebeff7;
+  border-radius: var(--radius);
+  padding: 25px;
+  text-align: left;
+  color: #0c0187;
 }
 
 .notice1 {
@@ -91,7 +106,7 @@ footer {
 nav ul { list-style: none; margin: 0; padding: 0; }
 nav li { display: inline-block; margin-right: 16px; }
 nav a { color: rgb(255, 255, 255); text-decoration: none; }
-nav a:hover {background: #27864b; 
+nav a:hover {background: #99adcd; 
 color: #000000;}
 
 
@@ -117,7 +132,7 @@ button {
   font: inherit;
   cursor: pointer;
 }
-button:hover { background: #8e99ab; 
+button:hover { background: #99adcd; 
 color: #000000;}
 
 /*{color: red} */
